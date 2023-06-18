@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIJAN GAMING BD</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JIJAN GAMING BD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Content</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to JIJAN GAMING BD</h1>
+      <p class="lead">Professional Gamer and Streamer</p>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>I am JIJAN, a passionate gamer and streamer.
+         I love playing various video games and sharing my gaming experiences with my audience.
+        With a focus on multiplayer games, I strive to create entertaining and engaging
+         content that brings joy to my viewers.<br>
+
+      Join me on this exciting gaming journey and let's have some fun together!<br><br>
+       <a href="https://www.youtube.com/@jijangamingbd5608" class="btn btn-success" style="width: 100%;">GO TO SUBSCRIBE</a></p>
+
+        </div>
+        <div class="col-md-6">
+         <a href="https://www.youtube.com/@jijangamingbd5608/featured"> <img src="{% static 'profile_picture.jpg' %}" alt="Profile Picture" class="img-fluid rounded-circle"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2>My Content</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <a href="https://www.youtube.com/watch?v=3p9zTwkYBuE"><img src="{% static 'portfolio_item1.jpg' %}" alt="Portfolio Item 1" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">Comparison Video</h5>
+              <p class="card-text">Check out my highest numbers of views video on youtube.<br>
+   Gameloop Vs LD Player // Which is the best for Free Fire Game? // Test with gameplay// Windows 10 pc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <a href="https://www.youtube.com/watch?v=94QsB_ZE4w8&t=2s"><img src="{% static 'portfolio_item2.jpg' %}" alt="Portfolio Item 2" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">Gameplay Video</h5>
+              <p class="card-text">Check out my 2nd highest numbers of views video on youtube.<br> 
+     One Tap Headshot with Vivo Y50 Mobile in Free Fire // Best Setting for Vivo Y50 Mobile .😖😦😦🥰</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <a href="https://www.youtube.com/watch?v=cXy1jcEIebM"><img src="{% static 'mqdefault_6s.webp' %}" alt="Portfolio Item 3" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">Comparison Video</h5>
+              <p class="card-text">Check out my 3rd highest numbers of views video on youtube.<br>
+msi App Player VS Gameloop//Which is the best for free fire game?//Test with gameplay//Windows 10 pc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="content">Message</label>
+          <textarea class="form-control" id="content" name="content" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2023 JIJAN GAMING BD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
